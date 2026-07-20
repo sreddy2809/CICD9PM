@@ -3,6 +3,8 @@ on: push
 jobs:
   job1:
     runs-on: ubuntu-latest
-    run: |
-       pwd
-       echo "${{ github.ref }}"
+    steps:
+    - name: test step
+      run: |
+         pwd
+         echo "${{ github.ref }}"
