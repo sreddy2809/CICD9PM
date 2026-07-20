@@ -1,5 +1,10 @@
 name: Event Filters
-on: push
+on: 
+  push:
+    branches:
+    - main
+    - UAT
+
 jobs:
   job1:
     runs-on: ubuntu-latest
