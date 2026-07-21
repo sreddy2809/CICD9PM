@@ -1,12 +1,11 @@
 name: Event Filters
 on: 
   push:
-    branches:
-    - main
-    - dev
-    branches-ignore:
-    - UAT
-    - XYZ
+    tags:
+    - "v*"
+    - "rel*
+    tags-ignore:
+    - "t*"
 jobs:
   job1:
     runs-on: ubuntu-latest
