@@ -1,8 +1,11 @@
 name: Event Filters
 on: 
   push:
+    branches:
+    - main
     tags:
-    - "*"
+    - "v*"
+   
 jobs:
   job1:
     runs-on: ubuntu-latest
@@ -11,3 +14,12 @@ jobs:
       run: |
          pwd
          echo "${{ github.ref }}"
+         
+ 
+
+
+git push origin main
+git push origin v1.1 
+
+
+       
