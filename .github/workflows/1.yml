@@ -18,12 +18,13 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
+    environment: ${{ inputs.target_env }}
     steps:
     - name: test step
       run: |
          pwd
          echo "${{ inputs.image_name }}"
          echo "${{ inputs.app_type }}"
-         echo "${{ secrets.SERVERPASSWD}}"
-         echo "${{ secrets.DB_PASSWD}}"
+         echo "${{ secrets.SERVERPASSWD }}"
+         echo "${{ secrets.DB_PASSWD }}"
 
