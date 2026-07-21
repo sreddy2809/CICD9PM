@@ -1,4 +1,4 @@
 a=1000
-b=20
-c=a+b
+b=200
+c=a+b+100
 print("Hello World Dev Code")
