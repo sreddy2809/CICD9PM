@@ -14,12 +14,3 @@ jobs:
       run: |
          pwd
          echo "${{ github.ref }}"
-         
- 
-
-
-git push origin main
-git push origin v1.1 
-
-
-       
