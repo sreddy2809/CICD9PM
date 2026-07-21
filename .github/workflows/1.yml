@@ -1,8 +1,8 @@
 name: Event Filters
 on: 
   push:
-    branches:
-    - main
+    tags:
+    - "*"
 jobs:
   job1:
     runs-on: ubuntu-latest
