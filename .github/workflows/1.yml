@@ -1,9 +1,8 @@
 name: Event Filters
 on: 
   push:
-    branches-ignore:
+    branches:
     - main
-    - UAT
 jobs:
   job1:
     runs-on: ubuntu-latest
