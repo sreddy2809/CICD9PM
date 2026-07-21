@@ -1,7 +1,10 @@
 name: Event Filters
 on: 
   push:
-   paths:
+    branches:
+    - main
+    - dev
+    paths:
     - '*.py'
     - '*.SQL'
     - '*.json' 
