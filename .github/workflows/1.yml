@@ -4,7 +4,8 @@ on:
    paths:
     - '*.py'
     - '*.SQL'
-    - '*.json'    
+    - '*.json' 
+    - 'DB/**'    
 jobs:
   job1:
     runs-on: ubuntu-latest
